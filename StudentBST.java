@@ -14,7 +14,7 @@ public class StudentBST {
 
     /** Inserts a student; returns false for null or a duplicate ID. */
     public boolean insert(Student student) {
-        if (student == null) return false;
+        if (student == null || student.getStudentId() == null) return false;
         if (search(student.getStudentId()) != null) return false;
         root = insertAt(root, student);
         return true;
