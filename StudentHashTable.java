@@ -19,7 +19,8 @@ public class StudentHashTable {
 
     /** Inserts a student; returns false for null or a duplicate ID. */
     public boolean insert(Student student) {
-        if (student == null || search(student.getStudentId()) != null) return false;
+        if (student == null || student.getStudentId() == null
+            || search(student.getStudentId()) != null) return false;
         int index = hash(student.getStudentId());
         buckets[index] = new Node(student, buckets[index]);
         return true;
