@@ -71,3 +71,13 @@ The following checks were actually performed:
 - No fake code changes were made.
 - No fake test results were claimed.
 - Any test not actually performed is considered not performed and is not claimed as passed.
+
+## Integration Verification
+As part of the group integration, I also verified that the Stack and Queue components work correctly with the integrated `Main.java` menu system.
+
+- Recent Actions using Stack: Verified
+- Student Service Requests using Queue: Verified
+- Stack LIFO behavior through the application: Passed
+- Queue FIFO behavior through the application: Passed
+- Empty Stack and Queue handling through the application: Passed
+- Full application compilation: Passed
